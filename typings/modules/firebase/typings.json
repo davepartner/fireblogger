@@ -1,0 +1,20 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/types/npm-firebase/7dceb15d79a7adacbd01163e7f65043900775e00/typings.json",
+    "raw": "registry:npm/firebase#3.0.5+20160723033700",
+    "main": "firebase-node.d.ts",
+    "version": "3.0.5",
+    "dependencies": {
+      "es6-promise": {
+        "src": "https://raw.githubusercontent.com/typed-typings/npm-es6-promise/fb04188767acfec1defd054fc8024fafa5cd4de7/typings.json",
+        "raw": "registry:npm/es6-promise#3.0.0+20160211003958",
+        "main": "dist/es6-promise.d.ts",
+        "name": "es6-promise",
+        "type": "typings"
+      }
+    },
+    "name": "firebase",
+    "type": "typings"
+  }
+}
