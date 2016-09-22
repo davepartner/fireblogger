@@ -52,7 +52,6 @@ signUpUser(email: string , password: string){
 		});	
 		});
 	});
-	
 }
 
 
