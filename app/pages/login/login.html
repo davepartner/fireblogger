@@ -27,6 +27,13 @@
     </ion-list>
     
     <button (click)="submitLogin()">Login </button>
-    <button (click)="submitRegister()">Register </button>
+    <button (click)="signUserUp()">Register </button>
     
+    
+    <ion-list>
+    	<p>Lates Users</p>
+    	<ion-item *ngFor="let user of usersList" >
+    		<ion-label>{{user.name.first}} {{user.name.last}} </ion-label>
+    	</ion-item>
+    </ion-list>
 </ion-content>
