@@ -23,7 +23,6 @@ private usersList : any;
 
   constructor(private alertCtrl: AlertController , private loadingCtrl: LoadingController, private navCtrl: NavController, private modalCtrl: ModalController, private usersService: UsersService) {
 				
-				this.emailField = "DavePartner@Gmail.com";
 				
   				this.listOurUsers();
   
@@ -60,10 +59,11 @@ listOurUsers(){
 //login
   submitLogin(){
   	
-  		
+  		alert(this.passwordField);
   	this.usersService.loginUser(this.emailField, this.passwordField).then(authData => {
   		//successful
   		this.navCtrl.setRoot(HomePage);
+  		
   	}, error => {
   		//alert("error logging in: "+ error.message);
   		let alert = this.alertCtrl.create({
@@ -72,7 +72,6 @@ listOurUsers(){
 	      buttons: ['OK']
 	    });
 	    alert.present();
-  		
   	});
   	
   	

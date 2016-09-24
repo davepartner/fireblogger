@@ -25,11 +25,13 @@ export class MyApp {
   };
   firebase.initializeApp(config);
   	
+  	//check logged in status
   	firebase.auth().onAuthStateChanged((user) => {
 		
 		if(user){
 			this.rootPage = TabsPage;
 		}else {
+			//this.rootPage = LoginPage;
 			this.rootPage = LoginPage;
 		}
 		
