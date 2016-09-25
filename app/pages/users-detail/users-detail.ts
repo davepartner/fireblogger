@@ -12,9 +12,15 @@ import { LoginPage } from '../login/login';
   templateUrl: 'build/pages/users-detail/users-detail.html',
   providers:[UsersService]
 })
+
+
+
 export class UsersDetailPage {
 
   constructor(private navCtrl: NavController, private usersService: UsersService) {
+
+
+
 
   }
 

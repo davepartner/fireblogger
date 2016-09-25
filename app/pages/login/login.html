@@ -4,32 +4,47 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- Wide card with share menu button -->
+<style>
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../assets/demos/welcome_card.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
 
-  <ion-toolbar >
-    <ion-title><i class="fa fa-user" aria-hidden="true"></i> Login</ion-title>
-    
- </ion-toolbar>
-
-</ion-header>
-
-
-
+ion-content{
+	background: url('img/background.jpg') center / cover;
+}
+</style>
 
 
 <ion-content padding>
 
+
+<div text-center style="margin-top: 50px;">
+
+	<ion-icon name="heart" style="font-size: 100px; color: white;"> </ion-icon>
+</div>
+
+
+
 <ion-list>
 
-  <ion-item>
+ 
     <ion-label stacked>Email</ion-label>
-    <ion-input type="text" value="" [(ngModel)]="emailField"></ion-input>
-  </ion-item>
+    <ion-input type="text" value="" [(ngModel)]="emailField" style="border: 1px solid gray;"></ion-input>
+ 
 
-  <ion-item>
+  
     <ion-label stacked>Password</ion-label>
-    <ion-input type="password" value="" [(ngModel)]="passwordField"></ion-input>
-  </ion-item>
+    <ion-input type="password" value="" [(ngModel)]="passwordField" style="border: 1px solid gray;"></ion-input>
+ 
 
 </ion-list>
 
@@ -39,8 +54,8 @@
  <button (click)="signUserUp()"> Signup</button>
  </ion-buttons>
  <div class="fpbutton" >
- 	<button primary full (click)="googleSignIn()" ><ion-icon name="logo-googleplus"></ion-icon> Sign In With Google</button>
- 	<button clear full (click)="showForgotPassword()">Forgot Password</button>
+ 	<button light full outline (click)="googleSignIn()" ><ion-icon name="logo-googleplus"></ion-icon> Sign In With Google</button>
+ 	<button light full outline (click)="showForgotPassword()">Forgot Password</button>
  </div>
  
  

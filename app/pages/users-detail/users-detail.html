@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar class="john" >
     <ion-title>users-detail</ion-title>
     
       <ion-buttons start (click)="logUserOut()">
@@ -21,5 +21,43 @@
 
 
 <ion-content padding>
+
+<ion-card text-center>
+
+<img src="img/profile_pic.jpg" style="margin: auto; margin-top: 20px;  border-radius: 500px; height:200px; width: 200px; "/>
+	
+	<ion-card-content>
+	<ion-card-title>
+		Dave Partner Girl
+	</ion-card-title>
+		This is my full profile about me details.
+	</ion-card-content>
+	
+</ion-card>
+
+<ion-card>
+	<ion-card-header text-uppercase>
+		   My details
+	</ion-card-header>
+	
+	 <ion-list>
+	 	<button ion-item>
+	 		<ion-icon name="list"> </ion-icon>  24 years old
+	 	</button>
+	 
+	 	<button ion-item>
+	 		<ion-icon name="logo-buffer"> </ion-icon> 7.6 feet
+	 	</button>
+	  
+	 	<button ion-item>
+	 		<ion-icon name="globe"> </ion-icon> Nigeria
+	 	</button>
+	 </ion-list>
+</ion-card>
+
+
+	<button  danger fab><ion-icon name="mic"> </ion-icon> </button>
+
+
 
 </ion-content>

@@ -14,7 +14,7 @@ export class MyApp {
   public rootPage: any;
 
   constructor(private platform: Platform) {
-  	
+ 
   	// Initialize Firebase
   var config = {
     apiKey: "AIzaSyBoVDGO7MZvYabTVdWt1V6M_gDoTDt3IX8",
