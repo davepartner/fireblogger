@@ -65,5 +65,48 @@ loginUser(email: string, password: string): any {
  	//redirection
  }
 
+
+ forgotPasswordUser(email: any){
+ 	return this.fireAuth.sendPasswordResetEmail(email);
+ }
+ 
+ googleSignInUser(){
+ 	var provider = new firebase.auth.GoogleAuthProvider();
+ 	provider.addScope('https://www.googleapis.com/auth/plus.login');
+ 	
+ 	
+ 
+ 	var that = this;
+ 	
+ 	return firebase.auth().signInWithPopup(provider).then(function(result) {
+ 		
+  if (result.user) {
+  
+    // The signed-in user info.
+  var user = result.user;
+  
+    var res = result.user.displayName.split(" ");
+    
+   
+    that.userProfile.child(user.uid).set({
+			email: user.email,
+			photo: user.photoURL,
+			username: user.displayName,
+			 name:{
+			 	first: res[0],
+			 	middle: res[1],
+			 	last: res[2],
+			},
+		});
+		
+			
+		
+  }
+  
+}).catch(function(error) {
+	console.log(error);
+    //alert("error "+error.message);
+});
+ }
 }
 

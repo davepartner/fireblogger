@@ -33,8 +33,15 @@
 
 </ion-list>
 
+<ion-buttons class="joinButtons">
  <button (click)="submitLogin()"> Login </button>
  
  <button (click)="signUserUp()"> Signup</button>
+ </ion-buttons>
+ <div class="fpbutton" >
+ 	<button primary full (click)="googleSignIn()" ><ion-icon name="logo-googleplus"></ion-icon> Sign In With Google</button>
+ 	<button clear full (click)="showForgotPassword()">Forgot Password</button>
+ </div>
+ 
  
 </ion-content>
