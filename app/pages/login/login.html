@@ -29,7 +29,8 @@ ion-content{
 
 <div text-center style="margin-top: 50px;">
 
-	<ion-icon name="heart" style="font-size: 100px; color: white;"> </ion-icon>
+	<ion-icon name="heart" style="font-size: 100px; color: #ebedef;"> </ion-icon>
+	<h1 style="color: #ebedef">Fireblogger</h1>
 </div>
 
 
@@ -49,9 +50,9 @@ ion-content{
 </ion-list>
 
 <ion-buttons class="joinButtons">
- <button (click)="submitLogin()"> Login </button>
+ <button (click)="submitLogin()" danger> Login </button>
  
- <button (click)="signUserUp()"> Signup</button>
+ <button (click)="signUserUp()" danger> Signup</button>
  </ion-buttons>
  <div class="fpbutton" >
  	<button light full outline (click)="googleSignIn()" ><ion-icon name="logo-googleplus"></ion-icon> Sign In With Google</button>

@@ -41,6 +41,11 @@ loadUser(number){
 
 
 
+viewUser(userId: any){
+			var userRef = this.userProfile.child(userId);
+			
+				return userRef.once('value'); 
+}
 
 signUpUser(email: string , password: string){
 	return this.fireAuth.createUserWithEmailAndPassword(email, password).then((newUser) => {
