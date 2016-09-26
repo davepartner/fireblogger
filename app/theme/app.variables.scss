@@ -38,3 +38,14 @@ $colors: (
   	contrast: #ffeeee
   )
 );
+
+
+ion-header, ion-toolbar{
+  height: 300px;
+  background : color($colors, morecolor, base);
+}
+
+ion-navbar {
+  background : color($colors, morecolor, base);
+}
+

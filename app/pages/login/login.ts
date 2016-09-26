@@ -23,7 +23,8 @@ private usersList : any;
 
   constructor(private alertCtrl: AlertController , private loadingCtrl: LoadingController, private navCtrl: NavController, private modalCtrl: ModalController, private usersService: UsersService, private toastCtrl: ToastController) {
 				
-				
+				this.emailField = "";
+				this.passwordField = "";
   				this.listOurUsers();
   
   }
