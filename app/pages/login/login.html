@@ -18,7 +18,9 @@ ion-content{
 <div text-center style="margin-top: 50px;">
 
 	<!-- <ion-icon name="heart" style="font-size: 100px; color: #ebedef;" > </ion-icon> -->
-	<img src="img/logo.png" style="border-radius: 500px; border: 2px solid #fff; width: 100px; " /> 
+	<img src="img/logo.png" 
+	style="border-radius: 500px; border: 2px dotted #fff; 
+	width: 100px; " /> 
 	<h1 style="color: #ebedef">Fireblogger</h1>
 </div>
 
@@ -27,6 +29,7 @@ ion-content{
 <ion-list>
  
     <ion-label stacked style="color: #ebedef; margin-left: 10px; "><ion-icon name="mail"></ion-icon> Email</ion-label>
+    
     <ion-input type="text" [(ngModel)]="emailField" style="border: 1px solid #ebedef; border-radius: 15px; color: #ebedef;"></ion-input>
  
 
@@ -37,12 +40,16 @@ ion-content{
 </ion-list>
 
 <ion-buttons class="joinButtons">
- <button (click)="submitLogin()" danger> <ion-icon name="log-in"></ion-icon> Login </button>
+ <button (click)="submitLogin()" danger> 
+ <ion-icon name="log-in"></ion-icon> Login </button>
  
- <button (click)="signUserUp()" danger> <ion-icon name="arrow-forward"></ion-icon>  Signup</button>
+ <button (click)="signUserUp()" danger> 
+ <ion-icon name="arrow-forward"></ion-icon>  Signup</button>
  </ion-buttons>
+ 
  <div class="fpbutton" >
  	<button light block outline (click)="googleSignIn()" ><ion-icon name="logo-googleplus"></ion-icon> Sign In With Google</button>
+ 	
  	<button light block outline (click)="showForgotPassword()"><ion-icon name="unlock"></ion-icon>  Forgot Password</button>
  </div>
  
