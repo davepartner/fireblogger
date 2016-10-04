@@ -21,19 +21,19 @@
 
 
 
- <ion-card *ngFor="let post of posts">
+ <ion-card *ngFor="let post of userPostsLists">
 
   <ion-item>
     <ion-avatar item-left>
-      <img src="{{postUserPhoto}}">
+      <img src="{{userPhoto}}">
     </ion-avatar>
-    <h2>Marty McFly</h2>
-    <p>November 5, 1955</p>
+    <h2>{{userDisplayName}}</h2>
+    <p>2pm today</p>
   </ion-item>
 
 
   <ion-card-content>
-    <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+    <p>{{post.body}}</p>
   </ion-card-content>
 
   <ion-row>

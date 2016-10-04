@@ -36,12 +36,15 @@ viewPostService(postId:any){
 
 //view all posts made by this userId
 viewUsersPostsService(userId: any){
-	var userRef = this.postsNode.child(userId);
+	var userRef = this.usersPostsNode.child(userId);
 			return userRef.once('value'); 
 }
 
+listPostService(){
+			return this.postsNode.once('value'); 
+}
+
 createPostService(userId: any, postBody: any){
-  
   	 // A post entry.
   var postData = {
     uid: userId,

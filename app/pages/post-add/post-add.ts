@@ -26,6 +26,10 @@ private userId :any;
   }
 
 
+
+
+
+
 addNewPost(){
 	
 	 //add preloader
@@ -74,4 +78,7 @@ addNewPost(){
             	});
 	
 }
+
+
+
 }
