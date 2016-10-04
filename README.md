@@ -60,7 +60,7 @@ Follow me on my social media handles
 
 ## Contacts
 
-* You can reach the me on `daveozoalor@gmail.com`
+* You can reach the me on `daveozoalor@gmail.com`, I'd like to join your team.
 * Just buzz me up on [facebook](http://facebook.com/daveozoalor)
 
 ## License
