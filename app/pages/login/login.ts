@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, ModalController, LoadingController, AlertController, ToastController} from 'ionic-angular';
-import { RegisterPage } from '../register/register';
 import { HomePage } from '../home/home';
 import { UsersService } from '../../providers/users-service/users-service';
 
@@ -89,13 +88,6 @@ listOurUsers(){
   	
     }
  
-  
-  submitRegister(){
-  	 
-  	 let registerModal = this.modalCtrl.create(RegisterPage);
-  	 registerModal.present();
-  	 
-  }
   
 
 showForgotPassword(){

@@ -34,9 +34,9 @@ this.displayUser(myUserId);
 displayUser(theUserId){
 	
 	var that = this;
+	
 	this.usersService.viewUser(theUserId).then(snapshot => {
 	
-	that.userPhotoUrl = snapshot.val();
 		 //get user photo
 		that.userPhotoUrl = snapshot.val().photo; //get user photo
 	   that.userDislplayName= snapshot.val().username; 

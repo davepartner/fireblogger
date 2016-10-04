@@ -1,0 +1,31 @@
+<!--
+  Generated template for the PostAddPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>post-add</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+
+<ion-item>
+   <ion-label stacked>Make A Post</ion-label>
+   <ion-textarea [(ngModel)]="postBody"></ion-textarea>
+ </ion-item>
+
+
+ <button margin primary (click)="addNewPost()">Post</button>
+</ion-list>
+
+
+
+</ion-content>

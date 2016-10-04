@@ -34,8 +34,28 @@ $colors: (
   dark:       #222,
   favorite:   #69BB7B,
   morecolor: (
-  	base: #851d29,
-  	contrast: #ffeeee
+  	base: #bb1144,
+  	contrast: #ffffff
+  ),
+  orangecolor: (
+    base: #e14242,
+  	contrast: #ffffff
   )
 );
 
+
+$toolbar-background:  color($colors, orangecolor);
+
+
+  	$toolbar-md-active-color:  #fff;
+  	$toolbar-md-inactive-color:  #e3e3e3;
+  	$toolbar-md-text-color: #fff;
+
+
+
+ion-content {
+    background-color: #f8f8f8 !important;
+    /*To use image as a background, put the image in www/img */
+    /*background: url('../../img/inner-background.jpg') center / cover;*/
+    
+}
