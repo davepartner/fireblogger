@@ -62,6 +62,7 @@ listPosts(){
 							  that.userEmail = snapshotUser.val().email;
 							  that.userPhoto = snapshotUser.val().photo;
 							  
+							  //check the console section of your browser inspect element
 							  console.log( "user details: "+ snapshotUser.val() );
                          })
 							  

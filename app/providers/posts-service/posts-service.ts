@@ -37,7 +37,7 @@ viewPostService(postId:any){
 //view all posts made by this userId
 viewUsersPostsService(userId: any){
 	var userRef = this.usersPostsNode.child(userId);
-			return userRef.once('value'); 
+			return userRef.on('value'); 
 }
 
 listPostService(){
