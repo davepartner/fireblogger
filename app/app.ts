@@ -26,7 +26,9 @@ export class MyApp {
   firebase.initializeApp(config);
   	
   	//check logged in status
-  	firebase.auth().onAuthStateChanged((user) => {
+  /*
+  This was causing blank pages so I commented it out and changed it to the one below it.
+  firebase.auth().onAuthStateChanged((user) => {
 		
 		if(user){
 			this.rootPage = TabsPage;
@@ -35,7 +37,17 @@ export class MyApp {
 			this.rootPage = LoginPage;
 		}
 		
-	});
+	}); */
+
+  var user = firebase.auth().currentUser; //this is what to change
+
+        if (user) {
+            // User is signed in. Redirect to Tabs Page
+            this.rootPage = TabsPage;
+        } else {
+            // No user is signed in.
+            this.rootPage = LoginPage;
+        }
   	
     
 
