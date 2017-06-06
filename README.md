@@ -17,7 +17,7 @@ When you have completed the above processes, run:
 You can download this project directly or clone it using git
 run the following command
 ```
- git clone https://github.com/daveozoalor/fireblogger
+ git clone https://github.com/daveozoalor/fireblogger-ionic2-firebase3-social-network
 `````
 
 After downloading/cloning it
