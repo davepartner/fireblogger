@@ -1,7 +1,7 @@
 # Fireblogger 
 
 #notice
-The updated version of this project with geofire and geolocation setup is here => [Ionic3 firebase geofire setup ) (https://github.com/daveozoalor/Ionic3-firebase-authentication-geofire-geolocation) . Dont forget to star it, I'm counting on you . thanks.
+The updated version of this project with geofire and geolocation setup is here => [Ionic3 firebase geofire setup ] (https://github.com/daveozoalor/Ionic3-firebase-authentication-geofire-geolocation) . Dont forget to star it, I'm counting on you . thanks.
 
 
 A blogging app built with [Ionic 2](http://ionicframework.com) and  [Firebase](https://firebase.google.com)
