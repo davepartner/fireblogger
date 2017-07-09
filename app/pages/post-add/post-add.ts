@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, ViewController,LoadingController,AlertController } from 'ionic-angular';
+import {HomePage} from '../home/home';
 import { PostsService } from '../../providers/posts-service/posts-service';
 import * as firebase from 'firebase';
 
@@ -60,7 +61,7 @@ addNewPost(){
 	
 	
 	//close the popup
-	this.viewCtrl.dismiss();
+	this.navCtrl.push(HomePage);
 	
 		
 		}, error => {
